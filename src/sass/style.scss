@@ -1,0 +1,24 @@
+*{
+    font-family: 'Museo Sans', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "base/mixins";
+@import "base/variables";
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/advantages";
+@import "blocks/title";
+@import "blocks/media";
+@import "blocks/consultaion";
+@import "blocks/forms";
+@import "blocks/carousel";
+.container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
