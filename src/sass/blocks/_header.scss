@@ -1,8 +1,10 @@
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &__logo{
         width: 250px;
+        height: 48px;
         img{
             width: 100%;
         }

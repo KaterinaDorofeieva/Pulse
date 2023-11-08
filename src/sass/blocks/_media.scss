@@ -1,0 +1,117 @@
+@media (max-width: 1200px){
+
+}
+@media (max-width: 991px){
+    
+    .promo{
+        min-height: 550px;
+        .header {
+            &__logo {
+                width: 175px;
+            }
+            &__official {
+                font-size: 10px;
+                span {
+                    font-size: 15px;
+                }
+            }
+            &__link {
+                font-size: 14px;
+            }
+            .button {
+                width: 134px;
+                height: 21px;
+                font-size: 10px;
+            }
+        }
+        &__header {
+            font-size: 31px;
+        }
+        &__subheader{
+            font-size: 17px;
+        }
+        &__items{
+            margin-top: 46px;
+            width: 350px;
+            margin-bottom: 48px;
+        }
+    }
+}
+@media (max-width: 767px){
+    .promo {
+        .header {
+            height: auto;
+            &__logo {
+                width: 153px;
+                img{
+                    margin-top: 10px;
+                }
+            }
+            &__official {
+                display: none;
+            } 
+
+            &__link {
+                font-size: 12px;
+            }
+            .button{
+                width: 115px;
+                height: 21px;
+                font-size: 8px;
+            } 
+        }
+        &__wrapper{
+            align-items: center;
+        }
+        &__header{
+            font-size: 29px;
+        }
+        &__subheader{
+            font-size: 15px;
+        }
+    }            
+} 
+@media (max-width: 575px){
+    .promo{
+        padding: 25px 15px 35px 15px;
+        min-height: 300px;
+        .header{
+            &__logo {
+                img {
+                    width: 137px;
+                }
+            }
+            &__phone{
+                margin-bottom: 0;
+            }
+        }    
+        &__header {
+            margin-top: 45px;
+            font-size: 19px;
+        }
+        &__subheader {
+            font-size: 11px;
+        }
+        &__items{
+            margin-top: 21px;
+            width: 242px;
+            margin-bottom: 30px;
+        }
+        &__item{
+            img{
+                width: 33%;
+            }
+        }
+        &__descr{
+            font-size: 12px;
+        }
+        .button_right{
+            width: 192px;
+            height: 36px;
+            font-size: 12px;
+        }
+        &__link{
+            font-size: 13px;
+        }
+    }    
+}
