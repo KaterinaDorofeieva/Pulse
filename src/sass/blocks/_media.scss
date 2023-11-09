@@ -36,21 +36,39 @@
             margin-bottom: 48px;
         }
     }
+    .advantures{
+        &__items{
+            justify-content: space-between;
+        }
+        &__descr{
+            h3{
+                font-size: 15px;
+            }
+            p{
+                font-size: 15px;
+                span{
+                    font-size: 12px;
+                }
+            }
+        }
+        &__img{
+            img{
+                width: 35%;
+            }
+        }
+
+    }
 }
 @media (max-width: 767px){
     .promo {
         .header {
             height: auto;
             &__logo {
-                width: 153px;
+                width: 125px;
                 img{
                     margin-top: 10px;
                 }
             }
-            &__official {
-                display: none;
-            } 
-
             &__link {
                 font-size: 12px;
             }
@@ -69,7 +87,17 @@
         &__subheader{
             font-size: 15px;
         }
-    }            
+    }        
+    .advantures{
+        &__descr{
+            p{
+                font-size: 12px;
+            }
+        }
+        .title{
+            font-size: 25px;
+        }
+    }    
 } 
 @media (max-width: 575px){
     .promo{
@@ -81,13 +109,16 @@
                     width: 137px;
                 }
             }
+            &__official{
+                display: none;
+            }
             &__phone{
                 margin-bottom: 0;
             }
         }    
         &__header {
             margin-top: 45px;
-            font-size: 19px;
+            font-size: 20px;
         }
         &__subheader {
             font-size: 11px;
@@ -113,5 +144,21 @@
         &__link{
             font-size: 13px;
         }
+
     }    
+    .advantures {
+        .title{
+            font-size: 20px;
+        }
+        &__items {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 45px;
+        }
+        &__img{
+            img{
+                width: 25%;
+            }
+        }
+    }
 }
