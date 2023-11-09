@@ -5,16 +5,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .container {
-    width: 950px;
-    margin: 0 auto;
-} */
+.container {
+    position: relative;
+}
 @import "base/mixins";
 @import "base/variables";
 
 @import "blocks/promo";
 @import "blocks/advantures";
 @import "blocks/consultation";
+@import "blocks/carousel";
 
 @import "blocks/header";
 @import "blocks/buttons";

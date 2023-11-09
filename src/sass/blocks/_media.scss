@@ -1,4 +1,7 @@
 @media (max-width: 1200px){
+    .tns-nav{
+        display: none;
+    }
 
 }
 @media (max-width: 991px){
@@ -56,7 +59,6 @@
                 width: 35%;
             }
         }
-
     }
     .consultation{
         .title_left{
@@ -67,6 +69,36 @@
             font-size: 18px;
         }
     }
+    .carousel{
+        &__inner{
+            width: 500px;
+        }
+        .prev,.next {
+            display: none;
+        }
+        .tns-item{
+            img{
+                width: 75%;
+            }
+        }
+        .tns-nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 15px;
+            button{
+                width: 15px;
+                height: 15px;
+                border-radius: 90%;
+                border: none;
+                margin: 5px;
+            }
+        }
+        .tns-nav-active{
+            background-color: $accent_text_color;
+        }
+    }
+    
 }
 @media (max-width: 767px){
     .promo {
@@ -130,6 +162,15 @@
             font-size: 15px;
         }
     }
+    .carousel{
+        .tns-nav{
+            button{
+                width: 10px;
+                height: 10px; 
+            }
+        }
+    }
+    
 } 
 @media (max-width: 575px){
     .promo{
@@ -191,9 +232,6 @@
             img{
                 width: 25%;
             }
-        }
-        .feed-form{
-
         }
     }
     .consultation{
