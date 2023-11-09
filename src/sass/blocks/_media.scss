@@ -58,6 +58,15 @@
         }
 
     }
+    .consultation{
+        .title_left{
+            font-size: 29px;
+            line-height: 38px;
+        }
+        &__subheader{
+            font-size: 18px;
+        }
+    }
 }
 @media (max-width: 767px){
     .promo {
@@ -98,6 +107,29 @@
             font-size: 25px;
         }
     }    
+    .consultation{
+        min-height: 500px;
+        .title_left{
+            font-size: 23px;
+            line-height: 36px;
+        }
+        &__subheader{
+            font-size: 16px;
+        }
+        .feed-form{
+            width: 260px;
+            margin-top: 25px;
+            input{
+                height: 45px;
+                margin-bottom: 9px;
+            }
+        }
+        .button_consultation{
+            width: 260px;
+            height: 40px;
+            font-size: 15px;
+        }
+    }
 } 
 @media (max-width: 575px){
     .promo{
@@ -160,5 +192,15 @@
                 width: 25%;
             }
         }
+        .feed-form{
+
+        }
+    }
+    .consultation{
+        padding: 45px 0 45px 0;
+        .title_left{
+            line-height: 30px;
+            font-size: 20px;
+        }        
     }
 }
