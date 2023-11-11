@@ -37,14 +37,27 @@
             border: none;
         }
     }
-    &__content{
-        margin-top: 60px;   
+    &__content {
+        margin: 0 auto;
+        margin-top: 60px;  
+        width: 940px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap; 
+        &_active{
+            display: flex;
+            justify-content: space-between;
+        }
     }
     &-item{
+        margin-right: 10px;
         padding: 20px 20px 27px 20px;
         width: 303px;
         min-height: 442px;
         border: 2px solid #E8E8E8;
+        overflow: hidden;
+        margin: 0 10px;
+        margin-bottom: 20px;
         &__img{
             max-width: 100%;
             height: 200px;
@@ -73,6 +86,7 @@
             font-size: 14px;
             font-weight: 500;
             text-decoration: none;
+            text-transform: uppercase;
         }
         hr{
             margin-top: 17px;
@@ -94,6 +108,66 @@
             color: #050505;
             font-size: 20px;
             font-weight: 700;
+        }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__content{
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            &_active {
+                transform: translateX(0%);
+                margin-right: 20px;
+            }    
+        }
+        &__back {
+            color: $main-color;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            text-transform: uppercase;
+
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% -19px));
+        }
+        &__list{
+            padding-left: 0;
+            margin-bottom: 0;
+            list-style-type: none;
+            position: relative;
+
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            transition: 0.5s all;
+            padding-left: 19px;
+            &_active {
+                transform: translateX(-100%);
+                margin-left: 0px;                       
+            }
+        
+            li {
+                position: relative;
+                color: #555;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 21px;
+                margin-bottom: 20px;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 5px;
+                    height: 5px;
+                    background-color: $main-color;
+                    margin-left: -11px;
+                    top: 7px;
+                }
+            }
         }
     }
 }
