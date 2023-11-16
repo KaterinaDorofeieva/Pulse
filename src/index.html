@@ -571,20 +571,61 @@
 
         <div class="footer__info">
             <address>Ukraine, Хрещатик, д.65</address>
-            <a href="tel:84999228974">8 (499) 922-89-74</a>
+            <a class="footer__phone" href="tel:84999228974">8 (499) 922-89-74</a>
             <div class="footer__links">
                 <div class="footer__link">
-                    <span class="icon-facebook"></span>
+                    <a href="https://www.facebook.com/" class="footer__social">
+                        <span class="icon-facebook"></span>
+                    </a>
                 </div>
                 <div class="footer__link">
-                    <span class="icon-instagram"></span>
+                    <a href="#" class="footer__social">
+                        <span class="icon-instagram"></span>
+                    </a>
                 </div>
                 <div class="footer__link">
-                    <span class="icon-pinterest2"></span>
+                    <a href="#" class="footer__social">
+                        <span class="icon-pinterest2"></span>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
+    <section class="overlay">
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__title">Просто заполните форму заявки</h2>
+            <div class="modal__subtitle">и мы перезвоним вам в течении 10 минут</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_consultation">
+                    заказать кОНСУЛЬТАЦИЮ
+                </button>
+            </form>
+        </div>
+
+        <div class="modal" id="order">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__title">Ваш заказ:</h2>
+            <div class="modal__subtitle">Пульсометр Polar FT1</div>
+            <form class="feed-form feed-form_mt25" action="#">
+                <input name="name" required placeholder="Ваше имя" type="text">
+                <input name="phone" required placeholder="Ваш телефон" type="number">
+                <input name="email" required placeholder="Ваш E-mail" type="email">
+                <button class="button button_consultation">
+                    Купить
+                </button>
+            </form>
+        </div>
+
+        <div class="modal modal_mini" id="thanku">
+            <div class="modal__close">&times;</div>
+            <h2 class="modal__title">Спасибо за вашу заявку!</h2>
+            <div class="modal__subtitle">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
+    </section>   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>

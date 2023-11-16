@@ -19,7 +19,7 @@
         margin-bottom: 0;
         line-height: 20px;
     }
-    a{
+    &__phone{
         display: block;
         color: #FFF;
         text-align: center;
@@ -45,6 +45,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
         span{
             transform: scale(1.4);
         }
