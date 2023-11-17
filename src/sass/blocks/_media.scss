@@ -348,4 +348,25 @@
             line-height: 15px;
         }
     }
+    .modal{
+        width: 253px;
+        padding: 30px 25px 30px 25px;
+        &__close{
+            right: -30px;
+        }
+    }
+    .feed-form_mt25{
+        margin-top: 15px;
+        width: 179px;
+        margin-left: 13px;
+        input{
+            height: 40px;
+            width: 179px;
+        }
+    }
+    .button_consultation{
+        width: 179px;
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }
