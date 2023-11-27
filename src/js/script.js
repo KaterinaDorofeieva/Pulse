@@ -95,3 +95,89 @@ $('.button_mini').each(function(i) {
     $('.overlay, #order').fadeIn();
   });
 });
+
+function valideForms(form){
+  $(form).validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+      },
+      phone: "required",
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Вкажіть Ваше ім'я",
+        minlength: jQuery.validator.format("Вкажіть від {0} символів!")
+      },
+      phone: {
+        required: "Вкажіть Ваш номер телефону",
+      },
+      email: {
+        required: "Вкажіть Вашу почту",
+        email: "Неправильний адрес почти"
+      }
+    }
+  });    
+};
+
+valideForms('#consultation form');
+valideForms('#order form');
+valideForms('#consultation-form');
+
+$('input[name=phone]').mask("+(380) 99-999-99-99");
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize()
+  }).done(function() {
+      $(this).find("input").val("");
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanku').fadeIn('slow');
+
+      $('form').trigger('reset');
+  });
+  return false;
+});
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 1600){
+    $('.pageup').fadeIn();
+  } else {
+    $('.pageup').fadeOut();
+  }
+});
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      const hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+new WOW().init();

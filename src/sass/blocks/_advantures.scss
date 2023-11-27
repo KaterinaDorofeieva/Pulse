@@ -12,10 +12,18 @@
     &__item{
         width: 270px;
     }
-    &__img{
-        img{
-            display: block;
-            margin: 0 auto;
+    
+    &__icon{
+        display: block;
+        margin: 0 auto;
+        &_animated{
+            animation: heartbeat 1.5s ease infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+        &_animation{
+            animation: run 1.5s alternate;
         }
     }
     &__descr{
